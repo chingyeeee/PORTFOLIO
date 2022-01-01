@@ -1,0 +1,1102 @@
+@font-face {
+  font-family: NotoSansTC;
+  src: url("../font/NotoSerifTC-Medium.otf");
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+@font-face {
+  font-family: ZenMaruGothic;
+  src: url("../font/Comfortaa-VariableFont_wght.ttf");
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #F4FBFF;
+  color: #263D4E;
+  letter-spacing: 0.05em;
+  line-height: 150%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.mainnav {
+  width: 100%;
+  height: 40px;
+  background: rgba(244, 251, 255, 0.7);
+  position: fixed;
+  z-index: 3;
+}
+
+.mainnav .hb {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.mainnav .hb span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  --tb: 16px;
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #263D4E;
+  -webkit-transition: top .5s .2s, bottom .5s .2s,  opacity .5s,  -webkit-transform .2s;
+  transition: top .5s .2s, bottom .5s .2s,  opacity .5s,  -webkit-transform .2s;
+  transition: top .5s .2s, bottom .5s .2s,  opacity .5s,  transform .2s;
+  transition: top .5s .2s, bottom .5s .2s,  opacity .5s,  transform .2s, -webkit-transform .2s;
+}
+
+.mainnav .hb span:first-child {
+  top: var(--tb);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.mainnav .hb span:last-child {
+  bottom: var(--tb);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.mainnav .hb span:nth-child(2) {
+  opacity: 1;
+}
+
+.mainnav .nav {
+  position: absolute;
+  top: 40px;
+  right: -40%;
+  background: rgba(244, 251, 255, 0.7);
+  width: 40%;
+  height: calc(100vh - 40px);
+  z-index: 3;
+}
+
+.mainnav .nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-content: center;
+}
+
+.mainnav .nav ul li a {
+  padding: 30px 20px;
+  font-family: 'Comfortaa';
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: #263D4E;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/cover-photo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cover-photo .logo {
+  width: 25%;
+  position: relative;
+  top: 25%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.cover-photo .logo img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 20px;
+}
+
+.about .about-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.about .about-pic .self-img {
+  width: 80%;
+  margin: auto;
+}
+
+.about .about-pic .self-img img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.about .about-pic .self-name {
+  width: 45%;
+  margin: 20px auto 40px auto;
+}
+
+.about .about-pic .self-name img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.about .about-pic .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.about .about-pic .language .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 12px solid #BCDEFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: 'Zen Maru Gothic';
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.about .about-pic .language .lang .level {
+  font-family: 'Noto Sans TC';
+  font-size: 12px;
+  padding-top: 3px;
+  line-height: 15px;
+}
+
+.about .about-pic .btn-porfo {
+  width: 100%;
+  height: 50px;
+  background-color: #BCDEFF;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  border: 0;
+  color: #263D4E;
+  margin: 40px 0 60px 0;
+  font-size: 14px;
+  font-family: Comfortaa;
+  letter-spacing: 0.05em;
+}
+
+.about .intro-title {
+  font-family: 'Zen Maru Gothic';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about .intro-content {
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  margin: 10px 0 40px 0;
+  line-height: 150%;
+}
+
+.title {
+  font-size: 28px;
+  font-family: Comfortaa;
+  color: #263D4E;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  margin: 20px 0 10px 0;
+}
+
+.subtitle {
+  font-family: 'Zen Maru Gothic';
+  font-size: 12px;
+  text-align: center;
+  color: #263D4E;
+}
+
+.experiences {
+  padding-top: 40px;
+}
+
+.experiences .study-exp {
+  margin-top: 40px;
+  border-bottom: 1px dashed #263D4E;
+}
+
+.experiences .study-exp .study {
+  max-width: 1200px;
+  margin: 0 20px;
+}
+
+.experiences .study-exp .study .study-title {
+  font-family: 'Zen Maru Gothic';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.experiences .study-exp .study .study-period {
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  margin: 10px 0 30px 0;
+}
+
+.experiences .work-exp {
+  max-width: 1200px;
+  margin: 30px 20px 40px 20px;
+}
+
+.experiences .work-exp .work-title {
+  font-family: 'Zen Maru Gothic';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.experiences .work-exp .work-period {
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.experiences .work-exp .work-content {
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  margin: 0 0 30px 0;
+}
+
+.abilities {
+  padding-top: 40px;
+  position: relative;
+}
+
+.abilities .abilities-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 8%;
+}
+
+.abilities .abilities-bg img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.abilities .web-bg {
+  display: none;
+}
+
+.abilities .ability {
+  max-width: 1200px;
+  margin: 0 20px;
+  width: 80%;
+  margin-right: auto;
+}
+
+.abilities .ability .trait {
+  font-family: 'Zen Maru Gothic';
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+  line-height: 23px;
+}
+
+.abilities .ability .design {
+  width: 48%;
+}
+
+.abilities .ability .trait-detail {
+  width: 95%;
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.abilities .ability .style {
+  width: 90%;
+}
+
+.abilities .designstyle {
+  margin: 150px 0 0 auto;
+}
+
+.abilities .frontweb {
+  margin-top: 150px;
+}
+
+.abilities .frontweb .trait-detail {
+  width: 100%;
+}
+
+.works {
+  max-width: 1200px;
+  margin: 150px 0px 0 0px;
+}
+
+.works .portfo-title {
+  font-family: 'Zen Maru Gothic';
+  font-size: 20px;
+  text-align: center;
+  margin: 40px 20px 10px 20px;
+  font-weight: 400;
+}
+
+.works .portfo-content {
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin: 0 20px 30px 20px;
+}
+
+.works .portfo-cover {
+  width: 100%;
+}
+
+.works .portfo-cover img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.works .portfo-detail {
+  max-width: 1200px;
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.works .portfo-detail .website {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #BCDEFF;
+  border: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  font-family: 'Zen Maru Gothic';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+.works .portfo-detail .bobio {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.works .portfo-detail .double-diamond .stepicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works .portfo-detail .double-diamond .stepicon .steptitle {
+  font-family: 'Zen Maru Gothic';
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.works .portfo-detail .double-diamond .stepdetail {
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin: 10px 0px 40px 0px;
+}
+
+footer {
+  background-image: url(../img/footer.svg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 60px;
+}
+
+footer .contact .contact-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+footer .contact .contact-detail.phone {
+  display: none;
+}
+
+footer .contact .contact-detail.github {
+  display: none;
+}
+
+footer .contact .contact-detail .icon {
+  width: 8px;
+  margin-right: 5px;
+}
+
+footer .contact .contact-detail .icon img {
+  width: 100%;
+  vertical-align: center;
+}
+
+footer .contact .contact-detail .detail {
+  font-size: 8px;
+}
+
+footer .copyright {
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+footer .copyright .copy {
+  width: 8px;
+}
+
+footer .copyright .copy img {
+  width: 100%;
+  vertical-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  .abilities .abilities-bg {
+    display: none;
+  }
+  .abilities .ability {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .abilities .ability .trait {
+    margin: 100px 0 15px 0;
+    line-height: 35px;
+  }
+  .abilities .ability .design {
+    width: 100%;
+  }
+  .abilities .ability .trait-detail {
+    width: 95%;
+  }
+  .abilities .ability .style {
+    width: 100%;
+  }
+  .abilities .designstyle {
+    margin-right: 0px;
+  }
+  .abilities .frontweb {
+    margin-top: 100px;
+  }
+  .abilities .frontweb .trait-detail {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainnav ul {
+    right: -20%;
+    width: 20%;
+  }
+  .cover-photo .logo {
+    width: 20%;
+  }
+  .title {
+    font-size: 64px;
+    margin: 50px 0;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .about {
+    max-width: 1200px;
+    margin: 0 50px;
+  }
+  .about .about-pic .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .about .about-pic .language .lang {
+    width: 150px;
+    height: 150px;
+    border: 20px solid #BCDEFF;
+    font-size: 24px;
+  }
+  .about .about-pic .language .lang .level {
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  .about .about-pic .btn-porfo {
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    margin: 60px 0 100px 0;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+  .about .intro-title {
+    font-size: 24px;
+  }
+  .about .intro-content {
+    font-size: 24px;
+    margin: 15px 0 40px 0;
+  }
+  .experiences {
+    padding-top: 100px;
+  }
+  .experiences .study-exp {
+    margin-top: 80px;
+  }
+  .experiences .study-exp .study {
+    margin: 0 50px;
+  }
+  .experiences .study-exp .study .study-title {
+    font-size: 24px;
+  }
+  .experiences .study-exp .study .study-period {
+    font-size: 24px;
+    margin: 20px 0 40px 0;
+  }
+  .experiences .work-exp {
+    max-width: 1200px;
+    margin: 30px 50px 40px 50px;
+  }
+  .experiences .work-exp .work-title {
+    font-size: 24px;
+  }
+  .experiences .work-exp .work-period {
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+  }
+  .experiences .work-exp .work-content {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    margin: 0 0 40px 0;
+  }
+  .abilities .ability {
+    max-width: 1200px;
+    margin: 0 50px;
+    width: 85%;
+  }
+  .abilities .ability .trait {
+    font-size: 24px;
+    margin: 100px 0 15px 0;
+    line-height: 35px;
+  }
+  .abilities .ability .design {
+    width: 80%;
+  }
+  .abilities .ability .trait-detail {
+    width: 100%;
+    font-family: 'Noto Sans TC';
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+  }
+  .abilities .ability .style {
+    width: 100%;
+  }
+  .abilities .designstyle {
+    margin-right: 0px;
+  }
+  .abilities .frontweb {
+    margin-top: 100px;
+  }
+  .abilities .frontweb .trait-detail {
+    width: 100%;
+  }
+  .works .portfo-title {
+    font-size: 48px;
+    margin: 100px 50px 45px 50px;
+    font-weight: 500;
+  }
+  .works .portfo-content {
+    font-size: 24px;
+    margin: 0 50px 50px 50px;
+  }
+  .works .portfo-detail {
+    max-width: 1200px;
+    margin: 0 50px;
+  }
+  .works .portfo-detail .website {
+    width: 250px;
+    height: 80px;
+    border-radius: 20px;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .works .portfo-detail .bobio {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  .works .portfo-detail .double-diamond .stepicon .steptitle {
+    font-size: 24px;
+  }
+  .works .portfo-detail .double-diamond .stepdetail {
+    font-size: 24px;
+  }
+  footer {
+    height: 180px;
+  }
+  footer .contact {
+    padding-top: 100px;
+  }
+  footer .contact .contact-detail.phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .contact .contact-detail.github {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .copyright {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mainnav ul {
+    right: -15%;
+    width: 15%;
+  }
+  .cover-photo {
+    height: 500px;
+  }
+  .cover-photo .logo {
+    width: 15%;
+  }
+  .portfo-detail .double-diamond .bobio {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  footer {
+    height: 220px;
+  }
+  footer .contact {
+    padding-top: 100px;
+  }
+  footer .contact .contact-detail .icon {
+    width: 30px;
+    margin-right: 10px;
+  }
+  footer .contact .contact-detail .detail {
+    font-size: 16px;
+  }
+  footer .copyright {
+    margin-top: 30px;
+  }
+  footer .copyright .copy {
+    width: 25px;
+    margin-right: 10px;
+  }
+  footer .copyright .copy img {
+    vertical-align: top;
+  }
+  footer .copyright .right {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cover-photo {
+    height: 600px;
+  }
+  .cover-photo .logo {
+    width: 12%;
+    z-index: 3;
+  }
+  .about {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .about .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+  }
+  .about .about-content .about-pic {
+    margin: auto;
+    width: 45%;
+  }
+  .about .about-content .about-me {
+    width: 45%;
+  }
+  .experiences {
+    padding-top: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .experiences .exp-bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1200px;
+    height: 1200px;
+    background-color: #F4FBFF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 75px solid #BCDEFF;
+    border-radius: 50% 0 50% 50%;
+    margin-top: 90px;
+    position: relative;
+    z-index: -2;
+    -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .experiences .exp-bg::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #F4FBFF;
+    border-radius: 50% 0 50% 50%;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    z-index: 3;
+  }
+  .experiences .exp-bg::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 80%;
+    background-image: url(../img/Arrow.svg);
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .experiences .exp-bg .study-exp {
+    margin: 0px auto;
+    border-bottom: 0px;
+    width: 45%;
+    position: relative;
+  }
+  .experiences .exp-bg .study-exp::after {
+    content: "";
+    position: absolute;
+    top: -223.5%;
+    right: -26px;
+    width: 525px;
+    height: 1050px;
+    background-color: #DCEEFF;
+    border-radius: 525px 0 0 525px;
+    z-index: -1;
+  }
+  .experiences .exp-bg .study-exp .study {
+    margin: 0px;
+    text-align: right;
+  }
+  .experiences .exp-bg .study-exp .study.uni {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  .experiences .exp-bg .study-exp .study.tibame {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  .experiences .exp-bg .work-exp {
+    width: 45%;
+    max-width: 1200px;
+    margin: 30px auto 40px auto;
+  }
+  .experiences .exp-bg .work-exp .work {
+    width: 95%;
+  }
+  .abilities .web-bg {
+    display: initial;
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+  }
+  .abilities .web-bg img {
+    width: 100%;
+  }
+  .abilities .ability {
+    width: 45%;
+    margin-right: auto;
+    padding-left: 100px;
+  }
+  .abilities .ability .trait {
+    margin: 150px 0 10px 0;
+  }
+  .abilities .ability .design {
+    width: 48%;
+  }
+  .abilities .ability .trait-detail {
+    width: 95%;
+  }
+  .abilities .ability .style {
+    width: 90%;
+  }
+  .abilities .designstyle {
+    margin: 250px 0 0 auto;
+    padding-left: 0px;
+    padding-right: 100px;
+  }
+  .abilities .frontweb {
+    margin-top: 350px;
+  }
+  .abilities .frontweb .trait-detail {
+    width: 100%;
+  }
+  .works {
+    max-width: 100%;
+    margin: 150px auto 0 auto;
+    padding-top: 150px;
+  }
+  .works .portfo-content {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+  }
+  .works .portfo-cover {
+    width: 100%;
+  }
+  .works .portfo-cover img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .works .portfo-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .works .portfo-detail .website {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  .works .portfo-detail .website.bobio {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  .works .portfo-detail .double-diamond {
+    width: 70%;
+    margin-right: 15%;
+  }
+  footer {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mainnav {
+    width: 80px;
+    height: 100vh;
+    background: rgba(244, 251, 255, 0.7);
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    border-left: 5px solid #D3E9FF;
+  }
+  .mainnav .hb {
+    display: none;
+  }
+  .mainnav .nav {
+    right: 40%;
+    height: 80px;
+    background-color: transparent;
+  }
+  .mainnav .nav ul {
+    display: initial;
+  }
+  .mainnav .nav ul li a {
+    display: block;
+    margin: 100px 0;
+    font-weight: 700;
+    font-size: 16px;
+    width: 200px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    text-align: center;
+    position: relative;
+    left: -300%;
+    top: 100px;
+  }
+  .navline::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 30px;
+    background-color: #BCDEFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    right: 50%;
+    top: -22px;
+  }
+  footer {
+    height: 300px;
+  }
+  footer .contact {
+    padding-top: 150px;
+    margin: auto;
+  }
+  footer .copyright {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

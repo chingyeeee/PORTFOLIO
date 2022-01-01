@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楊靜儀｜RonnieYeung</title>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.js"></script>
+</head>
+
+<body>
+  <div class="ronnie" id="app">
+    <nav class="mainnav">
+      <div class="hb" @click="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <ul id="nav">
+          <li>
+            <a href="#about" @click="goSec">ABOUT</a>
+          </li>
+          <li>
+            <a href="#experiences" @click="goSec">EXPERIENCES</a>
+          </li>
+          <li>
+            <a href="#abilities" @click="goSec">ABILITIES</a>
+          </li>
+          <li>
+            <a href="#works" @click="goSec">WORKS</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <header>
+      <div class="cover-photo">
+        <div class="logo" id="logo">
+          <a href="#logo"><img src="img/logo.svg" alt="logo"></a>
+        </div>
+      </div>
+    </header>
+    <section class="about" id="about">
+      <h1 class="title">ABOUT</h1>
+      <p class="subtitle">我是一個・・・</p>
+      <div class="about-content">
+        <div class="about-pic">
+          <div class="self-img">
+            <img src="img/self-image.png" alt="大頭貼">
+          </div>
+          <div class="self-name">
+            <img src="img/self-name.svg" alt="名字">
+          </div>
+          <div class="language">
+            <div class="lang">中文<div class="level">精通</div>
+            </div>
+            <div class="lang">粵語<div class="level">母語</div>
+            </div>
+            <div class="lang">英文<div class="level">(多益850)<br>精通</div>
+            </div>
+          </div>
+          <button class="btn-porfo" @click="goWorks">PORTFOLIO ＞＞</button>
+        </div>
+        <div class="about-me">
+          <div class="intro">
+            <h3 class="intro-title">喜歡開拓視野及追求新鮮感的攀登者</h3>
+            <p class="intro-content">
+              我喜歡探索未知並擁抱風險，對我來說突破舒適圈更能激發生活的熱情。作為隻身前來台灣升學的留學生，一路上的所見所聞不僅豐富了我的閱歷也拓展了我的思維，更提升了我的洞察力及團隊合作能力。</p>
+          </div>
+          <div class="intro">
+            <h3 class="intro-title">好奇的跨域學習者</h3>
+            <p class="intro-content">
+              大學期間，起初兩年主要專注心理學知識的鞏固，後期開始涉獵不同的領域，以心理學專才的身分成功為團隊合作注入新血。透過跨領域的交流參與設計協作，近來持續精進UI/UX相關技能並接觸前端工程。</p>
+          </div>
+          <div class="intro">
+            <h3 class="intro-title">UI/UX使用者介面設計</h3>
+            <p class="intro-content">Figma、Adobe XD、Ai、Ps、ID；桌機、行動裝置 wireframe/ mockup/ prototype設計(含RWD)</p>
+          </div>
+          <div class="intro">
+            <h3 class="intro-title">網頁前端技術</h3>
+            <p class="intro-content">HTML5、CSS3、CSS3動態特效、
+              JavaScript、RWD行動網頁、Bootstrap、jQuery、AJAX、SASS、
+              Vue.js前端框架</p>
+          </div>
+          <div class="intro">
+            <h3 class="intro-title">網站程式設計與資料庫</h3>
+            <p class="intro-content">系統分析(敏捷式開發)、PHP程式設計、
+              My SQL資料庫、Git 版本控制</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experiences" id="experiences">
+      <h1 class="title">EXPERIENCES</h1>
+      <p class="subtitle">我學過・・・我做過・・・</p>
+      <div class="exp-bg">
+        <div class="study-exp">
+          <div class="study uni">
+            <h3 class="study-title">國立成功大學｜心理學系</h3>
+            <div class="study-period">2017/09 - 2022/01</div>
+          </div>
+          <div class="study tibame">
+            <h3 class="study-title">緯育TiBaMe｜前端工程就業養成班</h3>
+            <div class="study-period">2021/09 - 2022/01</div>
+          </div>
+        </div>
+        <div class="work-exp">
+          <div class="work">
+            <h3 class="work-title">第六屆 Design for Taiwan - 浪浪工作坊</h3>
+            <div class="work-period">2021/09 - 進行中</div>
+            <p class="work-content">針對流浪動物議題進行桌面式研究及2次民間機構訪查，同時進行了7場訪談且收集281份問卷以收斂方向。</p>
+          </div>
+          <div class="work">
+            <h3 class="work-title">Tibame 前端工程師養成班 - 團體組長</h3>
+            <div class="work-period">2021/09 - 2022/01</div>
+            <p class="work-content">分配組內工作、促進成員間溝通以及
+              排定專題時程，參與並督導小組完成專題。</p>
+          </div>
+          <div class="work">
+            <h3 class="work-title">國立成功大學職業生涯教練計劃</h3>
+            <div class="work-period">2019/02 - 2019/06</div>
+            <p class="work-content">邀請企業中高階主管及社會菁英人士擔任職涯教練，藉以進一步接觸公司的內部運作和跨部門的工作內容。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="abilities" id="abilities">
+      <h1 class="title">ABILITIES</h1>
+      <p class="subtitle">我可以・・・</p>
+      <div class="abilities-bg"><img src="img/ability-bg.svg" alt=""></div>
+      <div class="web-bg"><img src="img/web-bg.svg" alt=""></div>
+      <div class="ability designthinking">
+        <h3 class="trait design">分析使用者需求｜設計思考</h3>
+        <p class="trait-detail">我上過服務設計相關課程並參與了Design For Taiwan工作坊，懂得運用使用者訪談、問卷調查、PERSONA、利害關係人圖及
+          CJM等方法針對洞察提出解決方案。</p>
+      </div>
+      <div class="ability designstyle">
+        <h3 class="trait style">了解每個主題、找到合適的風格｜網頁設計</h3>
+        <p class="trait-detail">我可以透過詳細的資料蒐羅整理和分析主題品牌調性設計出網站logo、決定網站風格及版型設計。</p>
+      </div>
+      <div class="ability frontweb">
+        <h3 class="trait front">讀懂工程師的心、與工程師緊密合作｜網頁前後端技術</h3>
+        <p class="trait-detail">
+          我可以獨立完成一個完整的RWD網站，熟悉HTML5、CSS3、JS及JQuery來讓網頁變得更生動有趣。我也使用過前端框架Vue.js來進行前後台資料串接，並且應用git、sourcetree進行版本控管及多人同時開發。此外還運用過系統分析(敏捷式開發)進行專案、利用PHP程式設計連結My
+          SQL資料庫進行前後台串接。</p>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <h1 class="title">WORKS</h1>
+      <p class="subtitle">我的作品・・・</p>
+      <div class="portfo">
+        <h1 class="portfo-title">xMU躍起</h1>
+        <p class="portfo-content">
+          xMU躍起是我在TiBaMe上課期間所製作的個人專題網站，同時榮獲最佳網站及視覺設計第一名的獎項。網站以自學吉他者為目標客群，其核心價值在於滿足自學者在學習時伴唱的需求，並縮短過程中蒐集資料之時間，希望為自學者在學習體驗中帶來更多的便利性。除了普通的線上課程以外，網站還包含歌曲樂譜及專屬吉他的小知識提供給自學者參考，以期在自學的路上助他們一臂之力。
+        </p>
+        <div class="portfo-cover">
+          <img src="img/xMU-cover.svg" alt="xMU">
+        </div>
+        <div class="portfo-detail">
+          <div class="double-diamond">
+            <div class="step define">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/discover.svg" alt="問題發現">
+                  <div class="steptitle">問題發現</div>
+                </div>
+                <div class="stepdetail">
+                  網路上充斥各式各樣的吉他教學影片及歌曲教學，但卻缺乏了系統性的課程規劃，讓初學者難以踏出第一步，最後導致半途而廢。
+                </div>
+              </div>
+            </div>
+            <div class="step discover">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/define.svg" alt="問題定義">
+                  <div class="steptitle">問題定義</div>
+                </div>
+                <div class="stepdetail">
+                  初學者往往得花費很多時間過濾、篩選合適的吉他教學內容，同時許多人也以自彈自唱為目標。
+                </div>
+              </div>
+            </div>
+            <div class="step solution">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/solution.svg" alt="解決方案">
+                  <div class="steptitle">解決方案</div>
+                </div>
+                <div class="stepdetail">
+                  統整資料以縮短初學者預習的時間並且建立系統性課程內容、線上課程提供伴唱服務、整理熱門流行的歌曲樂譜方便使用者練習。
+                </div>
+              </div>
+            </div>
+            <div class="step result">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/result.svg" alt="呈現結果">
+                  <div class="steptitle">呈現結果</div>
+                </div>
+                <div class="stepdetail">
+                  線上課程提供初階及進階字眼供使用者參考，讓他們可以根據自身能力去購買課程；劃分熱門樂譜及吉他專欄的區域，方便使用者快速地尋找所需的歌曲及相關知識。
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="website" @click="goxMU">前往網站 ＞＞</button>
+        </div>
+      </div>
+      <div class="portfo">
+        <h1 class="portfo-title">BOBIO</h1>
+        <p class="portfo-content">
+          BOBIO是我在TiBaMe上課期間所製作的團體專題網站，我主要負責整個網站的視覺設計包含logo、組件製作、網站風格以及版型設計。除此之外，主頁和立即祈願頁面的切版、動畫製作及前端程式都由我一手包辦。當中運用到HTML5、CSS3、Sass、JS、jQuery、Vue.js及Gsap套件等前端技術；後端資料庫的部分，則利用php及Vue.js串接主頁的人數和立即結緣的紀錄。
+        </p>
+        <div class="portfo-cover">
+          <img src="img/bobio-cover.svg" alt="xMU">
+        </div>
+        <div class="portfo-detail">
+          <div class="double-diamond">
+            <div class="step define">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/discover.svg" alt="問題發現">
+                  <div class="steptitle">問題發現</div>
+                </div>
+                <div class="stepdetail">
+                  無分年齡只要是信奉神明的人，平常都會到廟宇祈願或解惑，希望得到神明的保佑。然而疫情導致無法前往廟宇進行叩拜，信眾人心惶惶。
+                </div>
+              </div>
+            </div>
+            <div class="step discover">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/define.svg" alt="問題定義">
+                  <div class="steptitle">問題定義</div>
+                </div>
+                <div class="stepdetail">
+                  信眾會根據自己的需求到相對應的廟宇進行祈願、解惑及還願，並且希望得到神明的庇佑。
+                </div>
+              </div>
+            </div>
+            <div class="step solution">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/solution.svg" alt="解決方案">
+                  <div class="steptitle">解決方案</div>
+                </div>
+                <div class="stepdetail">
+                  結合人生中的六大需求，規劃相對應的神明透過線上求籤進行解惑、販售平安符願等服務讓信眾安心。
+                </div>
+              </div>
+            </div>
+            <div class="step result">
+              <div class="steptitle">
+                <div class="stepicon">
+                  <img src="img/result.svg" alt="呈現結果">
+                  <div class="steptitle">呈現結果</div>
+                </div>
+                <div class="stepdetail">
+                  創立祈願及求籤專區，信眾可以客製化專屬於自己獨一無二的平安符願，並且設有結緣專區供信眾進行還願。
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="website bobio" @click="goBobio">前往網站 ＞＞</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <a class="contact-detail email">
+          <div class="icon">
+            <img src="img/email.svg" alt="email">
+          </div>
+          <div class="detail">yc.yee617@gmail.com</div>
+        </a>
+        <a class="contact-detail phone">
+          <div class="icon">
+            <img src="img/phone.svg" alt="phone">
+          </div>
+          <div class="detail">+886 900158297</div>
+        </a>
+        <a class="contact-detail linkedin" href="https://www.linkedin.com/in/ching-yee-890314212/">
+          <div class="icon">
+            <img src="img/linkedin.svg" alt="linkedin">
+          </div>
+          <div class="detail">CHINGYEE YEUNG</div>
+        </a>
+        <a class="contact-detail github" href="https://github.com/chingyeeee">
+          <div class="icon">
+            <img src="img/git.svg" alt="github">
+          </div>
+          <div class="detail">chingyeee</div>
+        </a>
+      </div>
+      <div class="copyright">
+        <div class="copy">
+          <img src="img/copyright.svg" alt="copyright">
+        </div>
+        <div class="right">2021 BY RONNIEYEUNG</div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      created() {
+        window.addEventListener('scroll', this.handleScroll);
+      },
+      destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+      },
+      methods: {
+        hb() {
+          let place = $(".nav").css("right");
+          if (place < "0px") {
+            $(".nav").animate({
+              right: 0,
+            }, 700)
+          } else {
+            $(".nav").animate({
+              right: "-40%",
+            }, 700)
+          }
+        },
+        goSec() {
+          const anchor = $(".nav>li a").attr('href');
+          const linkScroll = $(anchor).offsetTop;
+          let body = $("html, body");
+          body.stop().animate({
+            scrollTop: linkScroll
+          }, 500);
+        },
+        goWorks(){
+          location.href = '#works';
+        },
+        goxMU(){
+          location.href = 'https://chingyeeee.github.io/xMU/xMU-mainpage.html';
+        },
+        goBobio(){
+          location.href = 'https://tibamef2e.com/cfd103/g1/';
+        },
+        handleScroll(event) {
+          // Any code to be executed when the window is scrolled
+          let topVal = $(window).scrollTop();
+          if(topVal >= 300 && topVal < 1300){
+            $('.mainnav>.nav>ul>li:nth-child(1)>a').addClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(2)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(3)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(4)>a').removeClass('navline');
+          }else if(topVal >= 1300 && topVal < 2800){
+            $('.mainnav>.nav>ul>li:nth-child(1)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(2)>a').addClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(3)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(4)>a').removeClass('navline');
+          }else if(topVal >= 2800 && topVal < 4500){
+            $('.mainnav>.nav>ul>li:nth-child(1)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(2)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(3)>a').addClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(4)>a').removeClass('navline');
+          }
+          else if(topVal >= 4500 && topVal < 8000){
+            $('.mainnav>.nav>ul>li:nth-child(1)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(2)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(3)>a').removeClass('navline');
+            $('.mainnav>.nav>ul>li:nth-child(4)>a').addClass('navline');
+          }else if(topVal >= 0 && topVal < 300){
+            $('.mainnav>.nav>ul>li:nth-child(1)>a').removeClass('navline');
+          }
+        }
+      },
+    });
+  </script>
+</body>
+
+</html>

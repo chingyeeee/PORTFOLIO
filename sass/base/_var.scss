@@ -1,0 +1,29 @@
+//顏色  
+$color:(mainblue: #F4FBFF,
+  btnblue: #BCDEFF,
+  lightblue: #DCEEFF,
+  fontcolor: #263D4E,
+  navColor: rgba(244, 251, 255, 0.7),
+);
+//常規字體
+$normalFont:'../font/NotoSerifTC-Medium.otf';
+
+// 副標字體
+$subTitleFont:'../font/ZenMaruGothic-Bold.ttf';
+
+// 標題字體
+$subTitleFont:'../font/Comfortaa-VariableFont_wght.ttf';
+
+//字級大小
+$fontSize:(h1: 64px,
+  phoneh1:28px,
+  h2: 24px,
+  h3: 18px,
+  phoneh2:16px,
+  phoneh3:14px,
+  phonep:12px,
+);
+
+//斷點  
+//版型
+$maxWidth: 1200px;
