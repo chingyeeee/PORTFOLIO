@@ -62,7 +62,7 @@
             <div class="lang">英文<div class="level">(多益850)<br>精通</div>
             </div>
           </div>
-          <button class="btn-porfo" @click="goPortfo">PORTFOLIO ＞＞</button>
+          <button class="btn-porfo" @click="goWorks">PORTFOLIO ＞＞</button>
         </div>
         <div class="about-me">
           <div class="intro">
@@ -212,7 +212,7 @@
       <div class="portfo">
         <h1 class="portfo-title">BOBIO</h1>
         <p class="portfo-content">
-          BOBIO是我在TiBaMe上課期間所製作的團體專題網站，我主要負責整個網站的視覺設計包含logo、組件製作、網站風格以及版型設計。除此之外，主頁和立即祈願頁面的切版、動畫製作及前端程式都由我一手包辦。當中運用到HTML5、CSS3、Sass、JS、jQuery、Vue.js及Gsap套件等前端技術；後端資料庫的部分，則利用php及Vue.js串接主頁的人數和立即結緣的紀錄。
+          BOBIO是我在TiBaMe上課期間所製作的團體專題網站，我主要負責整個網站的視覺設計包含logo、組件製作、網站風格以及版型設計。除此之外，主頁和立即祈願頁面的切版、動畫製作及前端程式都由我一手包辦。當中運用到HTML5、CSS3、Sass、JS、jQuery、Vue.js及Gsap套件等前端技術；後端資料庫的部分，則利用php、AJAX、mySQL及Vue.js串接主頁的人數和立即結緣的紀錄。
         </p>
         <div class="portfo-cover">
           <img src="img/bobio-cover.svg" alt="xMU">
@@ -333,8 +333,8 @@
             scrollTop: linkScroll
           }, 500);
         },
-        goPortfo(){
-          location.href = 'https://drive.google.com/drive/u/1/folders/1RcpKT1gLLrBQGkPYPLsrMSDJpwN65swd';
+        goWorks(){
+          location.href = '#works';
         },
         goxMU(){
           location.href = 'https://chingyeeee.github.io/xMU/xMU-mainpage.html';
