@@ -84,30 +84,7 @@ body{
     }
   }
 }
-// .slideIn{
-//   ul{
-//     right: 0%;
-//   }
-//   .hb span:first-child{
-//     top: 0;
-//     transform: rotate(315deg);
-//     transition: top .5s,
-//                 bottom .5s, 
-//                 opacity .5s, 
-//                 transform .2s .5s;
-//   }
-//   .hb span:last-child{
-//     bottom: 0;
-//     transform: rotate(-315deg);
-//     transition: top .5s,
-//                 bottom .5s, 
-//                 opacity .5s, 
-//                 transform .2s .5s;
-//   }
-//   .hb span:nth-child(2){
-//     opacity: 0;
-//   }
-// }
+
 .cover-photo{
   width: 100%;
   height: 400px;
@@ -277,7 +254,6 @@ body{
     max-width: $maxWidth;
     margin: 0 20px;
     width: 80%;
-    margin-right: auto;
     .trait{
       font-family: 'Zen Maru Gothic';
       font-size: map-get($fontSize, h3);
